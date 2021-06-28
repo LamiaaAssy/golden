@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<title>Golden Secent - eCommerce Bootstrap 4 HTML Template</title>
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/linearicons.css">
+<link rel="stylesheet" href="assets/css/flaticon.css">
+<link rel="stylesheet" href="assets/css/simple-line-icons.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/slick-theme.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/new.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<style>
+   
+
+    /*set a style for the buttons*/
+    button {
+        background-color: #000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    /*set the forgot password text*/
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /*set the Modal background*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /*style the model content box*/
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /*style the close button*/
+    .close {
+        position: absolute;
+        right: 55px;
+        top: 30px;
+        color:  #ccc;
+        font-size: 35px;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        cursor: pointer;
+    }
+
+    /* add zoom animation*/
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <!--Step 1 : Adding HTML-->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+        <form class="animate " action="/action_page.php">
+            <div class="login_register_wrap section ">
+                <div class="container">
+                    <div class="row justify-content-center" id="form" action="/action_page.php">
+                        <div class="col-xl-6 col-md-10">
+
+                            <div class="login_wrap">
+                                <div class="padding_eight_all bg-white">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&#10006;</span>
+                                    <div class="heading_s1">
+                                        <h3>Login</h3>
+                                    </div>
+                                    <form method="post">
+                                        <div class="form-group">
+                                            <input type="text" required="" class="form-control-f" name="email"
+                                                placeholder="Your Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control-f" required="" type="password" name="password"
+                                                placeholder="Password">
+                                        </div>
+                                        <div class="login_footer form-group">
+                                            <div class="chek-form">
+                                                <div class="custome-checkbox">
+                                                    <input class="form-check-input" type="checkbox" name="checkbox"
+                                                        id="exampleCheckbox1" value="">
+                                                    <label class="form-check-label"
+                                                        for="exampleCheckbox1"><span>Remember
+                                                            me</span></label>
+                                                </div>
+                                            </div>
+                                            <a href="#">Forgot password?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-fill-out btn-block" name="login">Log
+                                                in</button>
+                                        </div>
+                                    </form>
+                                    <div class="different_login">
+                                        <span> or</span>
+                                    </div>
+                                    <ul class="btn-login list_none text-center">
+                                        <li><a href="#" class="btn btn-facebook"><i
+                                                    class="ion-social-facebook"></i>Facebook</a>
+                                        </li>
+                                        <li><a href="#" class="btn btn-google"><i
+                                                    class="ion-social-googleplus"></i>Google</a>
+                                        </li>
+                                    </ul>
+                                    <div class="form-note text-center">Don't Have an Account? <a href="">Signupnow</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--sign up design-->
+
+    <!-- <form class="animate " action="/action_page.php">
+        <div class="login_register_wrap section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-md-10">
+                        <div class="login_wrap">
+                            <div class="padding_eight_all bg-white">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                    title="Close Modal">&#10006;</span>
+                                <div class="heading_s1">
+                                    <h3>Create an Account</h3>
+                                </div>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input type="text" required="" class="form-control-f" name="name" placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" required="" class="form-control-f" name="email" placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control-f" required="" type="password" name="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control-f" required="" type="password" name="password" placeholder="Confirm Password">
+                                    </div>
+                                    <div class="login_footer form-group">
+                                        <div class="chek-form">
+                                            <div class="custome-checkbox">
+                                                <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox2" value="">
+                                                <label class="form-check-label" for="exampleCheckbox2"><span>I agree to terms &amp; Policy.</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-fill-out btn-block" name="register">Register</button>
+                                    </div>
+                                </form>
+                                <div class="different_login">
+                                    <span> or</span>
+                                </div>
+                                <ul class="btn-login list_none text-center">
+                                    <li><a href="#" class="btn btn-facebook"><i class="ion-social-facebook"></i>Facebook</a></li>
+                                    <li><a href="#" class="btn btn-google"><i class="ion-social-googleplus"></i>Google</a></li>
+                                </ul>
+                                <div class="form-note text-center">Already have an account? <a href="">Log in</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </form> -->
+
+    
+
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

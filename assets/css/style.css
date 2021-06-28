@@ -1038,7 +1038,7 @@ button:focus {
 	padding: 10px 0;
 	vertical-align: top;
 	/* margin: 0; */
-	margin-left: -12%;
+	/* margin-left: -20%; */
 }
 .dark_skin .logo_light, .dark_skin .logo_default,
 .light_skin .logo_default, .light_skin .logo_dark,
@@ -1060,7 +1060,7 @@ button:focus {
 }
 .navbar {
 	/* padding: 0; */
-	padding: 3px 26%;
+	padding: 3px 29%;
 }
 .header_wrap {
 	transition: all 0.5s ease 0s;
@@ -1182,7 +1182,7 @@ button:focus {
 .navbar-nav.attr-nav {
 	-ms-flex-direction: row;
 	flex-direction: row;
-	margin-left: 23%;
+	margin-left: 43%;
 }
 .navbar-nav.attr-nav li .nav-link {
 	padding: 20px 10px;
@@ -2660,7 +2660,7 @@ input.text {
 .banner_section.shop_el_slider .carousel-item, 
 .banner_section.shop_el_slider .banner_content_wrap, 
 .banner_section.shop_el_slider .banner_content_wrap .carousel-item {
-	height: 175px;
+	height: 100%;
 }
 .banner_section.slide_wrap, 
 .banner_section.slide_wrap .carousel-item, 
@@ -4440,7 +4440,7 @@ footer .widget_title {
   18.START ACCORDION STYLE
 *===================================*/
 .accordion .card .card-header {
-	background-color: transparent;
+	/* background-color: transparent; */
 	padding: 0px;
 	margin: 0;
 }
@@ -4623,6 +4623,7 @@ footer .widget_title {
 	-ms-flex-align: center;
 	align-items: center;
 	position: relative;
+	margin-top: 0%;
 }
 .login_footer {
 	margin-bottom: 20px;
@@ -6030,12 +6031,8 @@ label.label_info {
   24.START ELEMENT DESIGN
 *===================================*/
 .form-control {
-	/* color: #000;
-	box-shadow: none;
-	height: 50px;
-	padding: 8px 15px; */
     display: block;
-    width: 1090px;
+    width: 1105px;
     height: calc(1em + .70rem + 1px);
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -6047,6 +6044,21 @@ label.label_info {
     background-clip: padding-box;
     border: none;
     border-radius: 12px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control-f {
+	display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .form-control:focus,

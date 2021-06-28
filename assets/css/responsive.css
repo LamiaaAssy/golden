@@ -132,7 +132,10 @@
 .banner_section.shop_el_slider .carousel-item, 
 .banner_section.shop_el_slider .banner_content_wrap, 
 .banner_section.shop_el_slider .banner_content_wrap .carousel-item {
-	height: 400px;
+	height: 100%;
+}
+.banner_img {
+    width: 90%;
 }
 .banner_content h2 {
 	font-size: 52px;
@@ -631,7 +634,7 @@
 .banner_section.slide_medium .carousel-item, 
 .banner_section.slide_medium .banner_content_wrap, 
 .banner_section.slide_medium .banner_content_wrap .carousel-item {
-	height: 350px;
+	height: 80px;
 }
 .banner_content h2 {
 	font-size: 44px;
@@ -973,7 +976,10 @@ div.banner_large_pad {
 .banner_section.slide_medium .carousel-item, 
 .banner_section.slide_medium .banner_content_wrap, 
 .banner_section.slide_medium .banner_content_wrap .carousel-item {
-	height: 350px;
+	height: 100%;
+}
+.banner_img {
+    width: 99%;
 }
 .banner_content1 h2 {
 	font-size: 44px;
@@ -1288,7 +1294,10 @@ p {
 	height: 250px;
 }
 .banner_section:not(.full_screen), .banner_section:not(.full_screen) .carousel-item, .banner_section:not(.full_screen) .banner_content_wrap, .banner_section:not(.full_screen) .banner_content_wrap .carousel-item {
-	height: 350px;
+	height: 100%;
+}
+.banner_img {
+    width: 100%;
 }
 .banner_content h2 {
 	font-size: 28px;
