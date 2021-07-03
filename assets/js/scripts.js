@@ -1,3 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+// ==========cart toggle=============
+
+ function toggleCart() {
+	document.querySelector('.sidecart').classList.toggle('open-cart');
+}
+
+toggleCart();
 /*===================================
 Author       : Bestwebcreator.
 Template Name: Shopwise - eCommerce Bootstrap 4 HTML Template
